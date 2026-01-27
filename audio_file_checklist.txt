@@ -1,0 +1,136 @@
+Audio File Checklist for MUSHRA Test (Short Version)
+=======================================================
+Total trials: 12
+Estimated duration: 25-30 minutes
+=======================================================
+
+
+configs/resources/audio/training/  [practice]
+  Description: Training
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial01/  [speech]
+  Description: Speech - Male speaker
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial02/  [speech]
+  Description: Speech - Female speaker
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial03/  [speech]
+  Description: Speech - Expressive/emotional
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial04/  [speech]
+  Description: Speech - Multiple speakers
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial05/  [music]
+  Description: Music - Solo instrument
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial06/  [music]
+  Description: Music - Vocal with accompaniment
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial07/  [music]
+  Description: Music - Full band/orchestra
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial08/  [music]
+  Description: Music - Electronic/synthesized
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial09/  [sound]
+  Description: Sound - Nature/ambient
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial10/  [sound]
+  Description: Sound - Mechanical/urban
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial11/  [sound]
+  Description: Sound - Mixed/complex scene
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
+
+configs/resources/audio/trial12/  [sound]
+  Description: Sound - Transients/impacts
+  [ ] reference.wav
+  [ ] anchor_opus.wav
+  [ ] yourcodec_7.5k.wav
+  [ ] yourcodec_4.5k.wav
+  [ ] dac_7.5k.wav
+  [ ] dac_4.5k.wav
+  [ ] encodec_6.0k.wav
