@@ -1,0 +1,262 @@
+testname: Audio Codec Evaluation - Test A
+testId: mushra_test_a
+bufferSize: 2048
+stopOnErrors: true
+showButtonPrevious: true
+remoteService: null
+pages:
+
+# ===== INTRODUCTION =====
+- type: generic
+  id: introduction
+  name: Welcome
+  content: >
+    <h2>Audio Codec Listening Test - Test A</h2>
+    <p>Thank you for participating in this study evaluating audio codec quality.</p>
+    <h3>Instructions:</h3>
+    <ul>
+    <li>Please use <strong>high-quality headphones</strong> in a quiet environment</li>
+    <li>You will hear multiple versions of the same audio clip</li>
+    <li>Rate each version from 0 (Bad) to 100 (Excellent) compared to the Reference</li>
+    <li>The Reference represents the original, uncompressed audio</li>
+    <li>You can replay and switch between samples as many times as needed</li>
+    <li>There is no time limit</li>
+    </ul>
+    <h3>Rating Scale:</h3>
+    <ul>
+    <li><strong>80-100:</strong> Excellent - Imperceptible difference from reference</li>
+    <li><strong>60-80:</strong> Good - Perceptible but not annoying</li>
+    <li><strong>40-60:</strong> Fair - Slightly annoying</li>
+    <li><strong>20-40:</strong> Poor - Annoying</li>
+    <li><strong>0-20:</strong> Bad - Very annoying</li>
+    </ul>
+    <p>The test contains <strong>12 trials</strong> and takes approximately <strong>20-25 minutes</strong>.</p>
+
+# ===== EQUIPMENT CHECK =====
+- type: generic
+  id: headphone_check
+  name: Equipment Check
+  content: >
+    <h2>Before You Begin</h2>
+    <p>Please confirm the following:</p>
+    <ul>
+    <li>I am wearing <strong>high-quality headphones</strong> (not earbuds or speakers)</li>
+    <li>I am in a <strong>quiet environment</strong></li>
+    <li>I have adjusted my <strong>volume to a comfortable level</strong></li>
+    <li>I will <strong>not adjust the volume</strong> during the test</li>
+    </ul>
+    <p>Click <strong>Next</strong> to proceed to a training trial.</p>
+
+# ===== TRAINING =====
+- type: mushra
+  id: training
+  name: Training Trial (Practice)
+  content: >
+    This is a <strong>practice trial</strong> to familiarize yourself with the interface.
+    Your ratings will NOT be recorded. Try clicking on different samples and adjusting the sliders.
+    The "Reference" button always plays the original uncompressed audio.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/training/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/training/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/training/harp_4.3kbps.wav
+    DAC: configs/resources/audio/training/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/training/bscodec_4.3kbps.wav
+
+# ===== MUSIC TRIALS (1-4) =====
+- type: mushra
+  id: trial01
+  name: Trial 1 of 12
+  content: "<strong>Music - Classical (Orchestra)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial01_music_classical/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial01_music_classical/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial01_music_classical/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial01_music_classical/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial01_music_classical/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial02
+  name: Trial 2 of 12
+  content: "<strong>Music - Jazz (Vocal Trio)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial02_music_jazz/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial02_music_jazz/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial02_music_jazz/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial02_music_jazz/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial02_music_jazz/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial03
+  name: Trial 3 of 12
+  content: "<strong>Music - Pop (Vocal-heavy)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial03_music_pop/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial03_music_pop/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial03_music_pop/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial03_music_pop/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial03_music_pop/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial04
+  name: Trial 4 of 12
+  content: "<strong>Music - Electronic (EDM)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial04_music_electronic/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial04_music_electronic/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial04_music_electronic/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial04_music_electronic/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial04_music_electronic/bscodec_4.3kbps.wav
+
+# ===== SPEECH TRIALS (5-8) =====
+- type: mushra
+  id: trial05
+  name: Trial 5 of 12
+  content: "<strong>Speech - Male Speaker 1</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial05_speech_male1/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial05_speech_male1/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial05_speech_male1/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial05_speech_male1/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial05_speech_male1/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial06
+  name: Trial 6 of 12
+  content: "<strong>Speech - Male Speaker 2</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial06_speech_male2/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial06_speech_male2/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial06_speech_male2/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial06_speech_male2/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial06_speech_male2/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial07
+  name: Trial 7 of 12
+  content: "<strong>Speech - Female Speaker 1</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial07_speech_female1/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial07_speech_female1/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial07_speech_female1/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial07_speech_female1/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial07_speech_female1/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial08
+  name: Trial 8 of 12
+  content: "<strong>Speech - Female Speaker 2</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial08_speech_female2/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial08_speech_female2/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial08_speech_female2/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial08_speech_female2/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial08_speech_female2/bscodec_4.3kbps.wav
+
+# ===== GENERAL AUDIO TRIALS (9-12) =====
+- type: mushra
+  id: trial09
+  name: Trial 9 of 12
+  content: "<strong>General Audio - Environmental (Rain with Thunder)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial09_audio_environmental/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial09_audio_environmental/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial09_audio_environmental/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial09_audio_environmental/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial09_audio_environmental/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial10
+  name: Trial 10 of 12
+  content: "<strong>General Audio - Mechanical (Engine Sounds)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial10_audio_mechanical/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial10_audio_mechanical/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial10_audio_mechanical/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial10_audio_mechanical/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial10_audio_mechanical/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial11
+  name: Trial 11 of 12
+  content: "<strong>General Audio - Animal (Birdsong)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial11_audio_animal/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial11_audio_animal/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial11_audio_animal/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial11_audio_animal/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial11_audio_animal/bscodec_4.3kbps.wav
+
+- type: mushra
+  id: trial12
+  name: Trial 12 of 12
+  content: "<strong>General Audio - Mixed (Crowd Ambience with Music)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial12_audio_mixed/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    anchor: configs/resources/audio/trial12_audio_mixed/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial12_audio_mixed/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial12_audio_mixed/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial12_audio_mixed/bscodec_4.3kbps.wav
+
+# ===== FINISH =====
+- type: finish
+  id: finish
+  name: Thank You
+  content: >
+    <h2>Test A Complete</h2>
+    <p>Thank you for completing Test A (4.3 kbps condition)!</p>
+    <p><strong>Important:</strong> Please click the <strong>Send Results</strong> button below to submit your responses.</p>
+    <p>If the button does not work, please download your results and email them to the researcher.</p>
+  showResults: true
+  writeResults: true
