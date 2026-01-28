@@ -61,6 +61,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/training/reference.wav
     anchor: configs/resources/audio/training/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/training/harp_7.7kbps.wav
     DAC: configs/resources/audio/training/dac_7.7kbps.wav
@@ -70,13 +71,14 @@ pages:
 - type: mushra
   id: trial01
   name: Trial 1 of 12
-  content: "<strong>Music - Classical (Orchestra)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial01_music_classical/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial01_music_classical/reference.wav
     anchor: configs/resources/audio/trial01_music_classical/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial01_music_classical/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial01_music_classical/dac_7.7kbps.wav
@@ -85,13 +87,14 @@ pages:
 - type: mushra
   id: trial02
   name: Trial 2 of 12
-  content: "<strong>Music - Jazz (Vocal Trio)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial02_music_jazz/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial02_music_jazz/reference.wav
     anchor: configs/resources/audio/trial02_music_jazz/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial02_music_jazz/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial02_music_jazz/dac_7.7kbps.wav
@@ -100,13 +103,14 @@ pages:
 - type: mushra
   id: trial03
   name: Trial 3 of 12
-  content: "<strong>Music - Pop (Vocal-heavy)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial03_music_pop/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial03_music_pop/reference.wav
     anchor: configs/resources/audio/trial03_music_pop/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial03_music_pop/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial03_music_pop/dac_7.7kbps.wav
@@ -115,13 +119,14 @@ pages:
 - type: mushra
   id: trial04
   name: Trial 4 of 12
-  content: "<strong>Music - Electronic (EDM)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial04_music_electronic/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial04_music_electronic/reference.wav
     anchor: configs/resources/audio/trial04_music_electronic/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial04_music_electronic/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial04_music_electronic/dac_7.7kbps.wav
@@ -131,13 +136,14 @@ pages:
 - type: mushra
   id: trial05
   name: Trial 5 of 12
-  content: "<strong>Speech - Male Speaker 1</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial05_speech_male1/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial05_speech_male1/reference.wav
     anchor: configs/resources/audio/trial05_speech_male1/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial05_speech_male1/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial05_speech_male1/dac_7.7kbps.wav
@@ -146,13 +152,14 @@ pages:
 - type: mushra
   id: trial06
   name: Trial 6 of 12
-  content: "<strong>Speech - Male Speaker 2</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial06_speech_male2/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial06_speech_male2/reference.wav
     anchor: configs/resources/audio/trial06_speech_male2/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial06_speech_male2/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial06_speech_male2/dac_7.7kbps.wav
@@ -161,13 +168,14 @@ pages:
 - type: mushra
   id: trial07
   name: Trial 7 of 12
-  content: "<strong>Speech - Female Speaker 1</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial07_speech_female1/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial07_speech_female1/reference.wav
     anchor: configs/resources/audio/trial07_speech_female1/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial07_speech_female1/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial07_speech_female1/dac_7.7kbps.wav
@@ -176,13 +184,14 @@ pages:
 - type: mushra
   id: trial08
   name: Trial 8 of 12
-  content: "<strong>Speech - Female Speaker 2</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial08_speech_female2/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial08_speech_female2/reference.wav
     anchor: configs/resources/audio/trial08_speech_female2/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial08_speech_female2/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial08_speech_female2/dac_7.7kbps.wav
@@ -192,13 +201,14 @@ pages:
 - type: mushra
   id: trial09
   name: Trial 9 of 12
-  content: "<strong>General Audio - Environmental (Rain with Thunder)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial09_audio_environmental/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial09_audio_environmental/reference.wav
     anchor: configs/resources/audio/trial09_audio_environmental/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial09_audio_environmental/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial09_audio_environmental/dac_7.7kbps.wav
@@ -207,13 +217,14 @@ pages:
 - type: mushra
   id: trial10
   name: Trial 10 of 12
-  content: "<strong>General Audio - Mechanical (Engine Sounds)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial10_audio_mechanical/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial10_audio_mechanical/reference.wav
     anchor: configs/resources/audio/trial10_audio_mechanical/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial10_audio_mechanical/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial10_audio_mechanical/dac_7.7kbps.wav
@@ -222,13 +233,14 @@ pages:
 - type: mushra
   id: trial11
   name: Trial 11 of 12
-  content: "<strong>General Audio - Animal (Birdsong)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial11_audio_animal/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial11_audio_animal/reference.wav
     anchor: configs/resources/audio/trial11_audio_animal/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial11_audio_animal/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial11_audio_animal/dac_7.7kbps.wav
@@ -237,13 +249,14 @@ pages:
 - type: mushra
   id: trial12
   name: Trial 12 of 12
-  content: "<strong>General Audio - Mixed (Crowd Ambience with Music)</strong><br>Rate the audio quality of each sample compared to the Reference."
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/trial12_audio_mixed/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
+    hidden_ref: configs/resources/audio/trial12_audio_mixed/reference.wav
     anchor: configs/resources/audio/trial12_audio_mixed/anchor_3.5khz_lp.wav
     HARP: configs/resources/audio/trial12_audio_mixed/harp_7.7kbps.wav
     DAC: configs/resources/audio/trial12_audio_mixed/dac_7.7kbps.wav
@@ -255,7 +268,7 @@ pages:
   name: Thank You
   content: >
     <h2>Test B Complete</h2>
-    <p>Thank you for completing Test B (7.7 kbps condition)!</p>
+    <p>Thank you for completing Test B!</p>
     <p><strong>Important:</strong> Please click the <strong>Send Results</strong> button below to submit your responses.</p>
     <p>If the button does not work, please download your results and email them to the researcher.</p>
   showResults: true
