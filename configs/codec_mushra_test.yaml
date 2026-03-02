@@ -1,284 +1,403 @@
-testname: Audio Codec Quality Evaluation
-testId: codec_mushra_2025
+testname: Audio Codec Evaluation - Combined Test
+testId: mushra_test_combined
 bufferSize: 2048
 stopOnErrors: true
 showButtonPrevious: true
 remoteService: null
 pages:
-
-# ===== INTRODUCTION =====
 - type: generic
   id: introduction
   name: Welcome
-  content: >
-    <h2>Audio Codec Listening Test</h2>
-    <p>Thank you for participating in this study evaluating audio codec quality.</p>
-    <h3>Instructions:</h3>
-    <ul>
-    <li>Please use <strong>high-quality headphones</strong> in a quiet environment</li>
-    <li>You will hear multiple versions of the same audio clip</li>
-    <li>Rate each version from 0 (Bad) to 100 (Excellent) compared to the Reference</li>
-    <li>The Reference represents the best possible quality</li>
-    <li>You can replay and switch between samples as many times as needed</li>
-    </ul>
-    <h3>Rating Scale:</h3>
-    <ul>
-    <li><strong>80-100:</strong> Excellent - Imperceptible difference from reference</li>
-    <li><strong>60-80:</strong> Good - Perceptible but not annoying</li>
-    <li><strong>40-60:</strong> Fair - Slightly annoying</li>
-    <li><strong>20-40:</strong> Poor - Annoying</li>
-    <li><strong>0-20:</strong> Bad - Very annoying</li>
-    </ul>
-    <p>The test contains <strong>12 trials</strong> and takes approximately <strong>25-30 minutes</strong>.</p>
+  content: '<h2>Audio Codec Listening Test</h2>
 
-# ===== EQUIPMENT CHECK =====
+    <p>Thank you for participating in this study evaluating audio codec quality.</p>
+
+    <h3>Instructions:</h3>
+
+    <ul>
+
+    <li>Please use <strong>high-quality headphones</strong> in a quiet environment</li>
+
+    <li>You will hear multiple versions of the same audio clip</li>
+
+    <li>Rate each version from 0 (Bad) to 100 (Excellent) compared to the Reference</li>
+
+    <li>The Reference represents the original, uncompressed audio</li>
+
+    <li>You can replay and switch between samples as many times as needed</li>
+
+    <li>There is no time limit</li>
+
+    </ul>
+
+    <h3>Rating Scale:</h3>
+
+    <ul>
+
+    <li><strong>80-100:</strong> Excellent - Imperceptible difference from reference</li>
+
+    <li><strong>60-80:</strong> Good - Perceptible but not annoying</li>
+
+    <li><strong>40-60:</strong> Fair - Slightly annoying</li>
+
+    <li><strong>20-40:</strong> Poor - Annoying</li>
+
+    <li><strong>0-20:</strong> Bad - Very annoying</li>
+
+    </ul>
+
+    <p>The test contains <strong>24 trials</strong> and takes approximately <strong>35-45
+    minutes</strong>.</p>'
 - type: generic
   id: headphone_check
   name: Equipment Check
-  content: >
-    <h2>Before You Begin</h2>
-    <p>Please confirm the following:</p>
-    <ul>
-    <li>I am wearing <strong>headphones</strong> (not using speakers)</li>
-    <li>I am in a <strong>quiet environment</strong></li>
-    <li>I have adjusted my <strong>volume to a comfortable level</strong></li>
-    <li>I will not adjust the volume during the test</li>
-    </ul>
-    <p>Click <strong>Next</strong> to proceed to a training trial.</p>
+  content: '<h2>Before You Begin</h2>
 
-# ===== TRAINING =====
+    <p>Please confirm the following:</p>
+
+    <ul>
+
+    <li>I am wearing <strong>high-quality headphones</strong> (not earbuds or speakers)</li>
+
+    <li>I am in a <strong>quiet environment</strong></li>
+
+    <li>I have adjusted my <strong>volume to a comfortable level</strong></li>
+
+    <li>I will <strong>not adjust the volume</strong> during the test</li>
+
+    </ul>
+
+    <p>Click <strong>Next</strong> to proceed to a training trial.</p>'
 - type: mushra
   id: training
   name: Training Trial (Practice)
-  content: This is a practice trial to familiarize yourself with the interface. Your ratings will NOT be recorded.
+  content: This is a <strong>practice trial</strong> to familiarize yourself with
+    the interface. Your ratings will NOT be recorded. Try clicking on different samples
+    and adjusting the sliders. The "Reference" button always plays the original uncompressed
+    audio.
   showWaveform: true
   enableLooping: true
   reference: configs/resources/audio/training/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/training/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/training/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/training/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/training/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/training/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/training/encodec_6.0k.wav
+    HARP: configs/resources/audio/training/harp_4.3kbps.wav
+    DAC: configs/resources/audio/training/dac_4.3kbps.wav
+- type: generic
+  id: section_4.3kbps
+  name: Section 1
+  content: '<h2>Section 1: Low Bitrate (4.3 kbps)</h2>
 
-# ===== SPEECH TRIALS (1-4) =====
+    <p>The following 12 trials evaluate codecs at <strong>4.3 kbps</strong>.</p>
+
+    <p>Click <strong>Next</strong> to begin.</p>'
 - type: mushra
-  id: trial01
-  name: Trial 1 of 12
-  content: "<strong>Speech - Male speaker</strong><br>Rate the audio quality compared to the Reference."
+  id: trial01_4.3kbps
+  name: Trial 1 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial01/reference.wav
+  reference: configs/resources/audio/trial01_music_classical/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial01/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial01/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial01/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial01/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial01/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial01/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial01_music_classical/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial01_music_classical/dac_4.3kbps.wav
 - type: mushra
-  id: trial02
-  name: Trial 2 of 12
-  content: "<strong>Speech - Female speaker</strong><br>Rate the audio quality compared to the Reference."
+  id: trial02_4.3kbps
+  name: Trial 2 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial02/reference.wav
+  reference: configs/resources/audio/trial02_music_jazz/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial02/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial02/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial02/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial02/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial02/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial02/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial02_music_jazz/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial02_music_jazz/dac_4.3kbps.wav
 - type: mushra
-  id: trial03
-  name: Trial 3 of 12
-  content: "<strong>Speech - Expressive/emotional</strong><br>Rate the audio quality compared to the Reference."
+  id: trial03_4.3kbps
+  name: Trial 3 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial03/reference.wav
+  reference: configs/resources/audio/trial03_music_pop/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial03/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial03/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial03/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial03/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial03/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial03/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial03_music_pop/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial03_music_pop/dac_4.3kbps.wav
 - type: mushra
-  id: trial04
-  name: Trial 4 of 12
-  content: "<strong>Speech - Multiple speakers</strong><br>Rate the audio quality compared to the Reference."
+  id: trial04_4.3kbps
+  name: Trial 4 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial04/reference.wav
+  reference: configs/resources/audio/trial04_music_electronic/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial04/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial04/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial04/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial04/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial04/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial04/encodec_6.0k.wav
-
-# ===== MUSIC TRIALS (5-8) =====
+    HARP: configs/resources/audio/trial04_music_electronic/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial04_music_electronic/dac_4.3kbps.wav
 - type: mushra
-  id: trial05
-  name: Trial 5 of 12
-  content: "<strong>Music - Solo instrument</strong><br>Rate the audio quality compared to the Reference."
+  id: trial05_4.3kbps
+  name: Trial 5 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial05/reference.wav
+  reference: configs/resources/audio/trial05_speech_male1/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial05/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial05/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial05/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial05/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial05/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial05/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial05_speech_male1/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial05_speech_male1/dac_4.3kbps.wav
 - type: mushra
-  id: trial06
-  name: Trial 6 of 12
-  content: "<strong>Music - Vocal with accompaniment</strong><br>Rate the audio quality compared to the Reference."
+  id: trial06_4.3kbps
+  name: Trial 6 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial06/reference.wav
+  reference: configs/resources/audio/trial06_speech_male2/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial06/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial06/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial06/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial06/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial06/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial06/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial06_speech_male2/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial06_speech_male2/dac_4.3kbps.wav
 - type: mushra
-  id: trial07
-  name: Trial 7 of 12
-  content: "<strong>Music - Full band/orchestra</strong><br>Rate the audio quality compared to the Reference."
+  id: trial07_4.3kbps
+  name: Trial 7 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial07/reference.wav
+  reference: configs/resources/audio/trial07_speech_female1/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial07/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial07/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial07/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial07/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial07/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial07/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial07_speech_female1/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial07_speech_female1/dac_4.3kbps.wav
 - type: mushra
-  id: trial08
-  name: Trial 8 of 12
-  content: "<strong>Music - Electronic/synthesized</strong><br>Rate the audio quality compared to the Reference."
+  id: trial08_4.3kbps
+  name: Trial 8 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial08/reference.wav
+  reference: configs/resources/audio/trial08_speech_female2/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial08/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial08/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial08/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial08/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial08/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial08/encodec_6.0k.wav
-
-# ===== SOUND TRIALS (9-12) =====
+    HARP: configs/resources/audio/trial08_speech_female2/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial08_speech_female2/dac_4.3kbps.wav
 - type: mushra
-  id: trial09
-  name: Trial 9 of 12
-  content: "<strong>Sound - Nature/ambient</strong><br>Rate the audio quality compared to the Reference."
+  id: trial09_4.3kbps
+  name: Trial 9 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial09/reference.wav
+  reference: configs/resources/audio/trial09_audio_environmental/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial09/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial09/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial09/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial09/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial09/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial09/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial09_audio_environmental/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial09_audio_environmental/dac_4.3kbps.wav
 - type: mushra
-  id: trial10
-  name: Trial 10 of 12
-  content: "<strong>Sound - Mechanical/urban</strong><br>Rate the audio quality compared to the Reference."
+  id: trial10_4.3kbps
+  name: Trial 10 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial10/reference.wav
+  reference: configs/resources/audio/trial10_audio_mechanical/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial10/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial10/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial10/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial10/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial10/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial10/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial10_audio_mechanical/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial10_audio_mechanical/dac_4.3kbps.wav
 - type: mushra
-  id: trial11
-  name: Trial 11 of 12
-  content: "<strong>Sound - Mixed/complex scene</strong><br>Rate the audio quality compared to the Reference."
+  id: trial11_4.3kbps
+  name: Trial 11 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial11/reference.wav
+  reference: configs/resources/audio/trial11_audio_animal/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial11/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial11/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial11/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial11/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial11/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial11/encodec_6.0k.wav
-
+    HARP: configs/resources/audio/trial11_audio_animal/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial11_audio_animal/dac_4.3kbps.wav
 - type: mushra
-  id: trial12
-  name: Trial 12 of 12
-  content: "<strong>Sound - Transients/impacts</strong><br>Rate the audio quality compared to the Reference."
+  id: trial12_4.3kbps
+  name: Trial 12 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial12/reference.wav
+  reference: configs/resources/audio/trial12_audio_mixed/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial12/anchor_opus.wav
-    YourCodec_7.5k: configs/resources/audio/trial12/yourcodec_7.5k.wav
-    YourCodec_4.5k: configs/resources/audio/trial12/yourcodec_4.5k.wav
-    DAC_7.5k: configs/resources/audio/trial12/dac_7.5k.wav
-    DAC_4.5k: configs/resources/audio/trial12/dac_4.5k.wav
-    EnCodec_6.0k: configs/resources/audio/trial12/encodec_6.0k.wav
+    HARP: configs/resources/audio/trial12_audio_mixed/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial12_audio_mixed/dac_4.3kbps.wav
+- type: generic
+  id: section_7.7kbps
+  name: Section 2
+  content: '<h2>Section 2: High Bitrate (7.7 kbps)</h2>
 
-# ===== FINISH =====
+    <p>The following 12 trials evaluate codecs at <strong>7.7 kbps</strong>.</p>
+
+    <p>Click <strong>Next</strong> to continue.</p>'
+- type: mushra
+  id: trial13_7.7kbps
+  name: Trial 13 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial01_music_classical/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial01_music_classical/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial01_music_classical/dac_7.7kbps.wav
+- type: mushra
+  id: trial14_7.7kbps
+  name: Trial 14 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial02_music_jazz/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial02_music_jazz/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial02_music_jazz/dac_7.7kbps.wav
+- type: mushra
+  id: trial15_7.7kbps
+  name: Trial 15 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial03_music_pop/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial03_music_pop/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial03_music_pop/dac_7.7kbps.wav
+- type: mushra
+  id: trial16_7.7kbps
+  name: Trial 16 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial04_music_electronic/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial04_music_electronic/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial04_music_electronic/dac_7.7kbps.wav
+- type: mushra
+  id: trial17_7.7kbps
+  name: Trial 17 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial05_speech_male1/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial05_speech_male1/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial05_speech_male1/dac_7.7kbps.wav
+- type: mushra
+  id: trial18_7.7kbps
+  name: Trial 18 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial06_speech_male2/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial06_speech_male2/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial06_speech_male2/dac_7.7kbps.wav
+- type: mushra
+  id: trial19_7.7kbps
+  name: Trial 19 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial07_speech_female1/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial07_speech_female1/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial07_speech_female1/dac_7.7kbps.wav
+- type: mushra
+  id: trial20_7.7kbps
+  name: Trial 20 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial08_speech_female2/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial08_speech_female2/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial08_speech_female2/dac_7.7kbps.wav
+- type: mushra
+  id: trial21_7.7kbps
+  name: Trial 21 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial09_audio_environmental/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial09_audio_environmental/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial09_audio_environmental/dac_7.7kbps.wav
+- type: mushra
+  id: trial22_7.7kbps
+  name: Trial 22 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial10_audio_mechanical/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial10_audio_mechanical/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial10_audio_mechanical/dac_7.7kbps.wav
+- type: mushra
+  id: trial23_7.7kbps
+  name: Trial 23 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial11_audio_animal/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial11_audio_animal/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial11_audio_animal/dac_7.7kbps.wav
+- type: mushra
+  id: trial24_7.7kbps
+  name: Trial 24 of 24
+  content: Rate the audio quality of each sample compared to the Reference.
+  showWaveform: true
+  enableLooping: true
+  reference: configs/resources/audio/trial12_audio_mixed/reference.wav
+  createAnchor35: false
+  createAnchor70: false
+  stimuli:
+    HARP: configs/resources/audio/trial12_audio_mixed/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial12_audio_mixed/dac_7.7kbps.wav
 - type: finish
   id: finish
   name: Thank You
-  content: >
-    <h2>Test Complete</h2>
-    <p>Thank you for your participation!</p>
-    <p><strong>Important:</strong> Please click the <strong>Send Results</strong> button below to submit your responses.</p>
-    <p>If the button does not work, please download your results and email them to the researcher.</p>
+  content: '<h2>Test Complete</h2>
+
+    <p>Thank you for completing the listening test!</p>
+
+    <p><strong>Important:</strong> Please click the <strong>Send Results</strong>
+    button below to submit your responses.</p>
+
+    <p>If the button does not work, please download your results and email them to
+    the researcher.</p>'
   showResults: true
   writeResults: true
