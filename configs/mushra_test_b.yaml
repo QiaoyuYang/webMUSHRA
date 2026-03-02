@@ -46,7 +46,7 @@ pages:
 
     </ul>
 
-    <p>The test contains <strong>12 trials</strong> and takes approximately <strong>20-25
+    <p>The test contains <strong>12 trials</strong> and takes approximately <strong>10-20
     minutes</strong>.</p>'
 - type: generic
   id: headphone_check
