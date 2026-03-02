@@ -82,7 +82,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/training/harp_7.7kbps.wav
-    DAC: configs/resources/audio/training/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/training/dac_7.7kbps.wav
 - type: mushra
   id: trial01
   name: Trial 1 of 12
@@ -94,7 +94,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial01_music_reggae/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial01_music_reggae/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial01_music_reggae/dac_7.7kbps.wav
 - type: mushra
   id: trial02
   name: Trial 2 of 12
@@ -106,7 +106,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial02_music_blues/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial02_music_blues/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial02_music_blues/dac_7.7kbps.wav
 - type: mushra
   id: trial03
   name: Trial 3 of 12
@@ -118,7 +118,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial03_music_indian/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial03_music_indian/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial03_music_indian/dac_7.7kbps.wav
 - type: mushra
   id: trial04
   name: Trial 4 of 12
@@ -130,7 +130,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial04_music_metal/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial04_music_metal/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial04_music_metal/dac_7.7kbps.wav
 - type: mushra
   id: trial05
   name: Trial 5 of 12
@@ -142,7 +142,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial05_speech_male1/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial05_speech_male1/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial05_speech_male1/dac_7.7kbps.wav
 - type: mushra
   id: trial06
   name: Trial 6 of 12
@@ -154,7 +154,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial06_speech_male2/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial06_speech_male2/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial06_speech_male2/dac_7.7kbps.wav
 - type: mushra
   id: trial07
   name: Trial 7 of 12
@@ -166,7 +166,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial07_speech_female1/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial07_speech_female1/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial07_speech_female1/dac_7.7kbps.wav
 - type: mushra
   id: trial08
   name: Trial 8 of 12
@@ -178,7 +178,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial08_speech_female2/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial08_speech_female2/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial08_speech_female2/dac_7.7kbps.wav
 - type: mushra
   id: trial09
   name: Trial 9 of 12
@@ -190,7 +190,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial09_audio_environmental/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial09_audio_environmental/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial09_audio_environmental/dac_7.7kbps.wav
 - type: mushra
   id: trial10
   name: Trial 10 of 12
@@ -202,7 +202,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial10_audio_mechanical/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial10_audio_mechanical/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial10_audio_mechanical/dac_7.7kbps.wav
 - type: mushra
   id: trial11
   name: Trial 11 of 12
@@ -214,7 +214,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial11_audio_nsv/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial11_audio_nsv/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial11_audio_nsv/dac_7.7kbps.wav
 - type: mushra
   id: trial12
   name: Trial 12 of 12
@@ -226,7 +226,7 @@ pages:
   createAnchor70: false
   stimuli:
     Proposed: configs/resources/audio/trial12_audio_mixed/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial12_audio_mixed/dac_7.7kbps.wav
+    Baseline: configs/resources/audio/trial12_audio_mixed/dac_7.7kbps.wav
 - type: finish
   id: finish
   name: Thank You
@@ -234,10 +234,7 @@ pages:
 
     <p>Thank you for completing the listening test!</p>
 
-    <p><strong>Important:</strong> Please click the <strong>Send Results</strong>
-    button below to submit your responses.</p>
-
-    <p>If the button does not work, please download your results and email them to
-    the researcher.</p>'
+    <p>Please click the <strong>Send Results</strong> button below to submit your
+    responses.</p>'
   showResults: true
   writeResults: true
