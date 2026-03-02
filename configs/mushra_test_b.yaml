@@ -91,56 +91,56 @@ pages:
   content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial01_music_classical/reference.wav
+  reference: configs/resources/audio/trial01_music_raggae/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial01_music_classical/anchor_3.5khz_lp.wav
-    HARP: configs/resources/audio/trial01_music_classical/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial01_music_classical/dac_7.7kbps.wav
-    BSCodec: configs/resources/audio/trial01_music_classical/bscodec_7.7kbps.wav
+    anchor: configs/resources/audio/trial01_music_raggae/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial01_music_raggae/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial01_music_raggae/dac_7.7kbps.wav
+    BSCodec: configs/resources/audio/trial01_music_raggae/bscodec_7.7kbps.wav
 - type: mushra
   id: trial02
   name: Trial 2 of 12
   content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial02_music_jazz/reference.wav
+  reference: configs/resources/audio/trial02_music_blues/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial02_music_jazz/anchor_3.5khz_lp.wav
-    HARP: configs/resources/audio/trial02_music_jazz/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial02_music_jazz/dac_7.7kbps.wav
-    BSCodec: configs/resources/audio/trial02_music_jazz/bscodec_7.7kbps.wav
+    anchor: configs/resources/audio/trial02_music_blues/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial02_music_blues/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial02_music_blues/dac_7.7kbps.wav
+    BSCodec: configs/resources/audio/trial02_music_blues/bscodec_7.7kbps.wav
 - type: mushra
   id: trial03
   name: Trial 3 of 12
   content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial03_music_pop/reference.wav
+  reference: configs/resources/audio/trial03_music_indian/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial03_music_pop/anchor_3.5khz_lp.wav
-    HARP: configs/resources/audio/trial03_music_pop/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial03_music_pop/dac_7.7kbps.wav
-    BSCodec: configs/resources/audio/trial03_music_pop/bscodec_7.7kbps.wav
+    anchor: configs/resources/audio/trial03_music_indian/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial03_music_indian/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial03_music_indian/dac_7.7kbps.wav
+    BSCodec: configs/resources/audio/trial03_music_indian/bscodec_7.7kbps.wav
 - type: mushra
   id: trial04
   name: Trial 4 of 12
   content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial04_music_electronic/reference.wav
+  reference: configs/resources/audio/trial04_music_metal/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial04_music_electronic/anchor_3.5khz_lp.wav
-    HARP: configs/resources/audio/trial04_music_electronic/harp_7.7kbps.wav
-    DAC: configs/resources/audio/trial04_music_electronic/dac_7.7kbps.wav
-    BSCodec: configs/resources/audio/trial04_music_electronic/bscodec_7.7kbps.wav
+    anchor: configs/resources/audio/trial04_music_metal/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial04_music_metal/harp_7.7kbps.wav
+    DAC: configs/resources/audio/trial04_music_metal/dac_7.7kbps.wav
+    BSCodec: configs/resources/audio/trial04_music_metal/bscodec_7.7kbps.wav
 - type: mushra
   id: trial05
   name: Trial 5 of 12
