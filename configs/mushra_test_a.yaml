@@ -3,7 +3,7 @@ testId: mushra_test_a
 bufferSize: 2048
 stopOnErrors: true
 showButtonPrevious: true
-remoteService: https://script.google.com/macros/s/AKfycbzhzBuCGC5Y0lk7S1Kw01Ssh7oqPV3hwKQzrCjEn863_NMQdziy7bhzo06qEavX-63t/exec
+remoteService: https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec
 pages:
 - type: generic
   id: introduction
@@ -81,7 +81,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/training/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/training/harp_4.3kbps.wav
     DAC: configs/resources/audio/training/dac_4.3kbps.wav
 - type: mushra
   id: trial01
@@ -93,7 +93,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial01_music_reggae/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial01_music_reggae/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial01_music_reggae/dac_4.3kbps.wav
 - type: mushra
   id: trial02
@@ -105,7 +105,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial02_music_blues/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial02_music_blues/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial02_music_blues/dac_4.3kbps.wav
 - type: mushra
   id: trial03
@@ -117,7 +117,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial03_music_indian/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial03_music_indian/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial03_music_indian/dac_4.3kbps.wav
 - type: mushra
   id: trial04
@@ -129,7 +129,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial04_music_metal/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial04_music_metal/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial04_music_metal/dac_4.3kbps.wav
 - type: mushra
   id: trial05
@@ -141,7 +141,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial05_speech_male1/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial05_speech_male1/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial05_speech_male1/dac_4.3kbps.wav
 - type: mushra
   id: trial06
@@ -153,7 +153,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial06_speech_male2/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial06_speech_male2/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial06_speech_male2/dac_4.3kbps.wav
 - type: mushra
   id: trial07
@@ -165,7 +165,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial07_speech_female1/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial07_speech_female1/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial07_speech_female1/dac_4.3kbps.wav
 - type: mushra
   id: trial08
@@ -177,7 +177,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial08_speech_female2/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial08_speech_female2/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial08_speech_female2/dac_4.3kbps.wav
 - type: mushra
   id: trial09
@@ -189,7 +189,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial09_audio_environmental/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial09_audio_environmental/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial09_audio_environmental/dac_4.3kbps.wav
 - type: mushra
   id: trial10
@@ -201,7 +201,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial10_audio_mechanical/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial10_audio_mechanical/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial10_audio_mechanical/dac_4.3kbps.wav
 - type: mushra
   id: trial11
@@ -213,7 +213,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial11_audio_nsv/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial11_audio_nsv/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial11_audio_nsv/dac_4.3kbps.wav
 - type: mushra
   id: trial12
@@ -225,7 +225,7 @@ pages:
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    HARP: configs/resources/audio/trial12_audio_mixed/harp_4.3kbps.wav
+    Proposed: configs/resources/audio/trial12_audio_mixed/harp_4.3kbps.wav
     DAC: configs/resources/audio/trial12_audio_mixed/dac_4.3kbps.wav
 - type: finish
   id: finish
