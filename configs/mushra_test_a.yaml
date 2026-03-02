@@ -231,14 +231,14 @@ pages:
   content: Rate the audio quality of each sample compared to the Reference.
   showWaveform: true
   enableLooping: true
-  reference: configs/resources/audio/trial11_audio_animal/reference.wav
+  reference: configs/resources/audio/trial11_audio_nsv/reference.wav
   createAnchor35: false
   createAnchor70: false
   stimuli:
-    anchor: configs/resources/audio/trial11_audio_animal/anchor_3.5khz_lp.wav
-    HARP: configs/resources/audio/trial11_audio_animal/harp_4.3kbps.wav
-    DAC: configs/resources/audio/trial11_audio_animal/dac_4.3kbps.wav
-    BSCodec: configs/resources/audio/trial11_audio_animal/bscodec_4.3kbps.wav
+    anchor: configs/resources/audio/trial11_audio_nsv/anchor_3.5khz_lp.wav
+    HARP: configs/resources/audio/trial11_audio_nsv/harp_4.3kbps.wav
+    DAC: configs/resources/audio/trial11_audio_nsv/dac_4.3kbps.wav
+    BSCodec: configs/resources/audio/trial11_audio_nsv/bscodec_4.3kbps.wav
 - type: mushra
   id: trial12
   name: Trial 12 of 12
