@@ -3,7 +3,7 @@ testId: mushra_test_b
 bufferSize: 2048
 stopOnErrors: true
 showButtonPrevious: true
-remoteService: https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec
+remoteService: https://script.google.com/macros/s/AKfycbzhzBuCGC5Y0lk7S1Kw01Ssh7oqPV3hwKQzrCjEn863_NMQdziy7bhzo06qEavX-63t/exec
 pages:
 - type: generic
   id: introduction
